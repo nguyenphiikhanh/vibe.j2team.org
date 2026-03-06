@@ -80,8 +80,16 @@ function padIndex(i: number): string {
         </p>
       </div>
 
+      <!-- CTA -->
+      <a
+        href="#cach-tham-gia"
+        class="inline-block mt-8 border border-accent-coral bg-accent-coral/10 px-6 py-3 font-display font-semibold text-accent-coral tracking-wide transition-all duration-300 hover:bg-accent-coral hover:text-bg-deep animate-fade-up animate-delay-4"
+      >
+        Tham gia ngay
+      </a>
+
       <!-- Dot divider -->
-      <div class="mt-12 flex flex-wrap gap-1.5 animate-fade-up animate-delay-4">
+      <div class="mt-12 flex flex-wrap gap-1.5 animate-fade-up animate-delay-5">
         <span v-for="n in 40" :key="n" class="w-1 h-1 rounded-full bg-border-default" />
       </div>
     </header>
@@ -157,7 +165,7 @@ function padIndex(i: number): string {
     </section>
 
     <!-- How to Contribute -->
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-20 scroll-reveal">
+    <section id="cach-tham-gia" class="max-w-5xl mx-auto px-4 sm:px-6 pb-20 scroll-reveal scroll-mt-8">
       <h2 class="font-display text-2xl font-semibold text-text-primary mb-10 flex items-center gap-3">
         <span class="text-accent-sky font-display text-sm tracking-widest">//</span>
         Cách tham gia
