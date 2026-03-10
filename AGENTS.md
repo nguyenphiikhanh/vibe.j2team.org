@@ -99,6 +99,8 @@ Before implementing any browser/DOM/state logic, **check if VueUse already has a
 
 Full list: https://vueuse.org/functions.html
 
+**Live reference**: See `src/views/hello-world/index.vue` for interactive demos of the composables listed above.
+
 ### @iconify/vue (MUST use for all icons)
 
 Use the `<Icon>` component for all icons instead of inline SVGs, emoji characters, or custom icon components:
@@ -116,6 +118,8 @@ import { Icon } from '@iconify/vue'
 ```
 
 **Preferred icon set: `lucide`** (e.g., `lucide:home`, `lucide:settings`, `lucide:arrow-left`). Only use other sets (`mdi`, `heroicons`, `ph`, `tabler`, `ri`, `solar`, `ion`) if Lucide doesn't have the needed icon. Browse at https://icon-sets.iconify.design/
+
+**Live reference**: See `src/views/hello-world/index.vue` for icon usage examples across multiple icon sets.
 
 ## Code Conventions
 
