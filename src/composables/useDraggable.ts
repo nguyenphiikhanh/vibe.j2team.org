@@ -21,7 +21,7 @@ export function useDraggable<T>(items: Ref<T[]>) {
       return
     }
     const arr = [...items.value]
-    const [moved] = arr.splice(dragIndex.value, 1)
+    const [moved] = arr.splice(dragIndex.value, 1) as [T]
     arr.splice(index, 0, moved)
     items.value = arr
     reset()
