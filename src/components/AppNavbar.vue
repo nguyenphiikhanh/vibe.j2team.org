@@ -37,12 +37,12 @@ watch(
           v-for="item in navItems"
           :key="item.to"
           :to="item.to"
-          class="flex items-center gap-1.5 px-3 py-2 font-display text-sm tracking-wide text-text-secondary transition-colors duration-200 hover:text-text-primary"
+          class="inline-flex items-center gap-1.5 px-3 py-2 font-display text-sm leading-none tracking-wide text-text-secondary transition-colors duration-200 hover:text-text-primary"
           exact-active-class="!text-accent-coral"
           active-class=""
         >
-          <Icon :icon="item.icon" class="w-4 h-4" />
-          {{ item.label }}
+          <Icon :icon="item.icon" class="w-4 h-4 shrink-0" />
+          <span class="translate-y-px">{{ item.label }}</span>
         </RouterLink>
       </div>
 
@@ -75,12 +75,12 @@ watch(
             v-for="item in navItems"
             :key="item.to"
             :to="item.to"
-            class="flex items-center gap-3 px-4 py-3 rounded-lg font-display text-sm tracking-wide text-text-secondary transition-colors duration-200 hover:text-text-primary hover:bg-bg-surface"
+            class="inline-flex items-center gap-3 px-4 py-3 rounded-lg font-display text-sm leading-none tracking-wide text-text-secondary transition-colors duration-200 hover:text-text-primary hover:bg-bg-surface"
             exact-active-class="!text-accent-coral bg-bg-surface"
             active-class=""
           >
-            <Icon :icon="item.icon" class="w-4 h-4" />
-            {{ item.label }}
+            <Icon :icon="item.icon" class="w-4 h-4 shrink-0" />
+            <span class="translate-y-px">{{ item.label }}</span>
           </RouterLink>
         </div>
       </div>
